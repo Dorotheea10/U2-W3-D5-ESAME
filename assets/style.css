@@ -1,0 +1,83 @@
+/* Stili per l'header fisso */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Dimensione del testo per il brand nella navbar */
+.navbar-brand {
+  font-size: 2em;
+}
+
+/* Dimensione del testo per i link nella navbar */
+.nav-link {
+  font-size: 1.5em;
+}
+
+/* Stili per il fieldset */
+fieldset {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Stili per le cards */
+.card {
+  margin: 0 auto;
+  height: 42em;
+}
+
+/* Dimensione del testo per il paragrafo nelle cards */
+.card-text {
+  font-size: 1.5em;
+}
+
+/* Dimensione del testo per gli elementi di lista */
+ul {
+  font-size: 1.2em;
+}
+
+/* Massima larghezza dell'immagine */
+#image {
+  max-width: 25em;
+}
+
+/* Dimensione del testo per i pulsanti Buy, Edit, Delete */
+#buyBtn,
+#editBtn,
+#deleteBtn {
+  font-size: 2em;
+}
+
+/* Media query per schermi di almeno 400px */
+@media screen and (min-width: 400px) {
+  .card {
+    height: 45em;
+  }
+}
+
+/* Media query per schermi di almeno 500px */
+@media screen and (min-width: 500px) {
+  .card {
+    height: 50em;
+  }
+}
+
+/* Media query comune per schermi di almeno 576px */
+@media screen and (min-width: 576px) {
+  .card {
+    height: 45em;
+    margin: 0 1em;
+    padding: 0;
+  }
+  ul {
+    font-size: 1.4em;
+  }
+}
+
+/* Media query per schermi di almeno 768px */
+@media screen and (min-width: 768px) {
+  .card {
+    height: 48em;
+  }
+}

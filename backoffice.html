@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crudazon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <!--icone bs-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <!--css bs-->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!--mio-->
+  </head>
+
+  <body id="backofficeBody">
+    <header>
+      <div class="container">
+        <nav id="navBackoffice" class="navbar fixed-top navbar-expand-lg">
+          <a class="navbar-brand" href="./Crudazon.html"><img src="" alt="" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./Crudazon.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./dettagli.html">Products</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./backoffice.html">Backoffice</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div>
+          <h1 class="text-center" id="editTitle">Create products</h1>
+        </div>
+
+        <div class="centering">
+          <form id="myForm">
+            <div>
+              <label for="nameField">Product name</label>
+              <input type="text" id="nameField" required />
+            </div>
+            <div>
+              <label for="descriptionField">Product description</label>
+              <input type="text" id="descriptionField" required />
+            </div>
+            <div>
+              <label for="brandField">Product brand</label>
+              <input type="text" id="brandField" required />
+            </div>
+            <div>
+              <label for="imgField">Product image URL</label>
+              <input type="text" id="imgField" required />
+            </div>
+            <div>
+              <label for="priceField">Product price</label>
+              <input type="number" id="priceField" required />
+            </div>
+            <div>
+              <button type="submit" id="mySubmit" class="btn">Create</button>
+              <button type="reset" id="myReset" class="btn">Reset</button>
+              <button type="button" id="delBtn" class="btn btn-danger d-none">Delete</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/css/js/back_office.js"></script>
+    <!--mio script-->
+  </body>
+</html>
